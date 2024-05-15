@@ -11,6 +11,6 @@ Explainable AI (XAI) refers to methods and techniques in the application of arti
 ## Section 2: ResNet50 Architecture and Importance of Understanding
 The ResNet50 model is a pivotal architecture within the domain of deep convolutional neural networks (CNNs) that has significantly impacted image classification tasks, notably achieving remarkable success in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC). Generally, ResNet50 has the following architecture: 
 
-![Alt text]([https://assets.digitalocean.com/articles/alligator/boo.svg](https://www.mdpi.com/applsci/applsci-13-07967/article_deploy/html/images/applsci-13-07967-g001-550.jpg) "a title")
+![ResNet50](https://www.mdpi.com/applsci/applsci-13-07967/article_deploy/html/images/applsci-13-07967-g001-550.jpg)
 
 The ResNet50 model, while renowned for its high accuracy in image classification tasks, exemplifies the "black box" nature inherent to many advanced deep learning models. This characteristic poses a significant challenge for AI researchers, practitioners, and end-users who seek to understand the model's predictive behaviour. The intricate architecture of ResNet50, characterised by its deep layers and residual blocks, complicates the interpretation of how input features influence the final classification outcomes
