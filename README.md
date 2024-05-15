@@ -14,3 +14,31 @@ The ResNet50 model is a pivotal architecture within the domain of deep convoluti
 ![ResNet50](https://www.mdpi.com/applsci/applsci-13-07967/article_deploy/html/images/applsci-13-07967-g001-550.jpg)
 
 The ResNet50 model, while renowned for its high accuracy in image classification tasks, exemplifies the "black box" nature inherent to many advanced deep learning models. This characteristic poses a significant challenge for AI researchers, practitioners, and end-users who seek to understand the model's predictive behaviour. The intricate architecture of ResNet50, characterised by its deep layers and residual blocks, complicates the interpretation of how input features influence the final classification outcomes
+
+## Section 3: Class Activation Mapping (CAM)
+### Definition and Principles
+Class Activation Mapping (CAM) is a technique that enables the visualization of which regions in the image are relevant to a particular category according to a convolutional neural network. CAM generates a heatmap for a given image prediction that highlights the important regions used by the CNN for making a decision.
+
+### Implementation on ResNet50
+To integrate CAM with ResNet50, it is essential that the network architecture includes a global average pooling layer. Here’s how you can modify ResNet50 to use CAM:
+
+```python
+from keras.applications.resnet50 import ResNet50
+from keras.models import Model
+from keras.layers import GlobalAveragePooling2D, Dense
+
+# Load the pre-trained ResNet50 model
+base_model = ResNet50(weights='imagenet', include_top=False)
+
+# Adding global average pooling layer
+x = base_model.output
+x = GlobalAveragePooling2D()(x)
+
+# Adding a fully connected layer
+predictions = Dense(1000, activation='softmax')(x)
+
+# Model to be trained
+model = Model(inputs=base_model.input, outputs=predictions)
+```
+
+## Section 3: Segmentation Class Activation Mapping (SeCAM)
