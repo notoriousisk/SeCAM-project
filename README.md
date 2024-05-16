@@ -42,7 +42,7 @@ Class Activation Mapping (CAM) is a technique used to identify the discriminativ
 ### b) Equations
 
 1. **Feature Maps**:
-    - Let \(f_k(x, y)\) represent the activation of unit $k$ in the feature map at spatial location \[(x, y)\].
+    - Let $`f_k(x, y)`$ represent the activation of unit $k$ in the feature map at spatial location \[(x, y)\].
 
 2. **Global Average Pooling**:
     - The GAP for feature map $k$ is computed as:
