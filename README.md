@@ -1,6 +1,5 @@
----
+
 katex: True
----
 
 # CAM and SeCAM: Explainable AI for Understanding Image Classification Models
 
@@ -50,23 +49,17 @@ Class Activation Mapping (CAM) is a technique used to identify the discriminativ
 
 2. **Global Average Pooling**:
     - The GAP for feature map $k$ is computed as:
-      $$
-      F_k = \frac{1}{Z} \sum_{x} \sum_{y} f_k(x, y)
-      $$
+      $F_k = \frac{1}{Z} \sum_{x} \sum_{y} f_k(x, y)$
       where $Z$ is the number of pixels in the feature map.
 
 3. **Class Score**:
     - The class score $S_c$ for class $c$ is computed as:
-      $$
-      S_c = \sum_{k} w_{k}^{c} F_k
-      $$
+      $S_c = \sum_{k} w_{k}^{c} F_k $
       where $w_{k}^{c}$ is the weight corresponding to class $c$ for feature map $k$.
 
 4. **Class Activation Map**:
     - The CAM for class $c$ is computed as:
-      $$
-      M_c(x, y) = \sum_{k} w_{k}^{c} f_k(x, y)
-      $$
+      $M_c(x, y) = \sum_{k} w_{k}^{c} f_k(x, y)$
       This gives the importance of each spatial element $(x, y)$ in the feature maps for class $c$.
 
 ### c) Implementation with Code
