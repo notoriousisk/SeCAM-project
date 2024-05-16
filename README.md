@@ -1,3 +1,7 @@
+---
+katex: True
+---
+
 # CAM and SeCAM: Explainable AI for Understanding Image Classification Models
 
 ## Introduction
@@ -64,7 +68,7 @@ Class Activation Mapping (CAM) is a technique used to identify the discriminativ
       M_c(x, y) = \sum_{k} w_{k}^{c} f_k(x, y)
       $$
       This gives the importance of each spatial element $(x, y)$ in the feature maps for class $c$.
-      $$
+
 ### c) Implementation with Code
 
 ### Step 1: Preprocess the Input Image
