@@ -1,5 +1,5 @@
 ---
-katex: true
+:katex: true
 ---
 
 # CAM and SeCAM: Explainable AI for Understanding Image Classification Models
