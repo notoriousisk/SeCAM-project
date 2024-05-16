@@ -15,5 +15,5 @@ include:
   - PULL_REQUEST_TEMPLATE.md
 kramdown:
   math_engine: katex
-katex:
+katex: true
 theme: jekyll-theme-cayman
