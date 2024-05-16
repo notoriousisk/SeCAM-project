@@ -21,7 +21,7 @@ The ResNet50 model, while renowned for its high accuracy in image classification
 
 Class Activation Mapping (CAM) is a technique used to identify the discriminative regions in an image that contribute to the class prediction made by a Convolutional Neural Network (CNN). CAM is particularly useful for understanding and interpreting the decisions of CNN models.
 
-! [CAM Example](images/CAM_architecture.png)
+![CAM Example](images/CAM_architecture.png)
 
 ### How CAM Works:
 
@@ -316,6 +316,7 @@ Now let's see the difference of CAMs for different classes of images.
 Segmentation-based Class Activation Mapping (SeCAM) is an advanced technique proposed by Quoc Hung Cao, Truong Thanh Hung Nguyen, Vo Thanh Khang Nguyen, and Xuan Phong Nguyen in their paper [Segmentation-based Class Activation Mapping](https://arxiv.org/abs/2307.04137). 
 This method combines the principles of Class Activation Mapping (CAM) with image segmentation to provide more interpretable and precise discriminative regions in an image. 
 SeCAM helps in understanding and interpreting the decisions of Convolutional Neural Network (CNN) models by highlighting regions of the image that are most influential in the model's prediction, segmented into meaningful parts.
+
 ![SeCAM Example](images/SeCAM_architecture.png)
 
 ### How SeCAM Works
